@@ -1,0 +1,83 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 82vh;
+    background-image: url(mehdi-messrro-g7pr3T0XM9o-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 1rem;
+}
+
+section {
+    color: rgb(255, 255, 255);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    max-width: 800px; /* Restrict width for better readability */
+}
+
+/* Footer styles */
+footer {
+    margin-top: 80vh;
+    text-align: center;
+    padding: 1rem;
+    background: #000000;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Add vertical spacing */
+    }
+
+    section {
+        margin: 1rem; /* Adjust margin for smaller screens */
+    }
+}
